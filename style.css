@@ -187,7 +187,7 @@ input[type=submit]:hover, input[type=reset]:hover {
 
 
 
-    .socialTable h3, td{
+    .socialTable h3 td{
         display: none;
     }
 
