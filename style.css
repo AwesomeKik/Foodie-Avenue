@@ -1,0 +1,256 @@
+a {
+    padding: 10px;
+}
+
+.midsection {
+    margin: 15px;
+    padding-top: 100px;
+    width: 100%;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(214, 214, 214, 0.767)), url(images/kitchenBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+/*simple img animation to make it feel like it's loading stuff. 
+I made it very subtle to not be distracting*/
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(5px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  img {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in forwards;
+  }
+
+/*Bootstrap elements adjustment*/
+navbar {
+    display: flex;
+}
+
+.card {
+    margin-top: 50px;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.733);
+}
+
+.dropdown-item {
+    font-size: 100%;
+}
+
+.dropdown-item:hover {
+    font-size: larger;
+    transition: font-size 0.3s ease;
+}
+
+
+/*Adjust Iframes to stay in container - aquired from W3Schools.com*/
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+  }
+
+    /* Then style the iframe to fit in the container div with full height and width */
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*This bunch of code styles the forms*/
+
+input[type=submit], input[type=reset] {
+    background-color: rgba(72, 72, 72, 0.796);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: orangered;
+
+}
+
+
+
+/*Table Adjustment at the About us page*/
+
+.midsection-table {
+        max-width: 70%;
+        margin-left: 14%;
+        background-color: rgba(46, 46, 50, 0.859);
+        border-radius: 20px;
+        border-collapse: collapse;
+}
+
+.midsection-table img {
+    width: 85%; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px;
+  
+  }
+  
+  .midsection-table td {
+    padding: 10px
+    
+  }
+
+  .midsection-table h3 {
+    color: white;
+    padding: 20px;
+  }
+
+
+  /*Socials Link Table & Hypertext, adjust*/
+
+  .socialTable {
+    max-width: 90%;
+    border-collapse: collapse;
+    }
+
+    .socialTable img {
+        height: auto; 
+        display: flex;
+        float: left;
+    
+        }
+
+    .socialTable td {
+    padding: 10px
+
+    }
+
+.socialLink li{
+    display: none;
+    list-style-type: none;
+
+}
+
+.socialLink h2 {
+    display: inline;
+}
+
+
+
+  @media (max-width: 1500px) {
+    .midsection-table {
+        max-width: 90%;
+        margin-left: 10%;
+    }
+
+    textarea {
+        width: 700px;
+    }
+
+  }
+
+  @media (max-width: 1300px) {
+
+    .socialTable h3 {
+        display: none;
+    }
+
+    .socialTable td {
+        float: left;
+        margin-left: 5%;
+    }
+  }
+
+  @media (max-width: 1200px) {
+
+
+
+    .socialTable h3, td{
+        display: none;
+    }
+
+    textarea {
+        width: 550px;
+    }
+
+
+    .socialLink li{
+        display: inline;
+        margin: auto;
+        padding: 50px;
+        margin-left: 20px;
+    }
+
+    .socialLink a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    .socialLink a:hover {
+        color: orangered;
+      }
+
+    .socialLink {
+        background-color: rgba(46, 46, 50, 0.702);
+        width: 90%;
+        padding: 5%;
+        border-radius: 20px;
+        color: #f2f2f2;
+    }
+
+
+
+
+    h1, h2, h3 {
+        font-size: larger;
+    }
+
+  }
+
+  @media (max-width: 1100px) {
+    .socialLink li{
+        margin-left: 15px;
+        padding: 3px;
+    }
+
+    textarea {
+        width: 500px;
+    }
+
+  }
+
+  @media (max-width: 800px) {
+    .socialLink li{
+        margin-left: 0px;
+        display: block;
+        padding: 40px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+
+}
