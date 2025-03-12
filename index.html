@@ -63,9 +63,9 @@ width: 90%
 
 /* The Close Button */
 .close {
-color: rgb(58, 58, 58);
+color: rgb(0, 0, 0);
 position: absolute;
-
+text-decoration: none;
 right: 20px;
 font-size: 60px;
 font-weight: bold;
@@ -74,9 +74,8 @@ font-weight: bold;
 .close:hover,
 .close:focus {
 color: #000000;
-text-decoration: none;
 cursor: pointer;
-background-color: #6f6f6fb5;
+background-color: rgba(0, 0, 0, 0.487);
 }
 
 /* Hide the slides by default */
@@ -85,8 +84,7 @@ display: none;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
 cursor: pointer;
 position: absolute;
 top: 50%;
@@ -112,7 +110,7 @@ border-radius: 3px 0 0 3px;
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-background-color: rgba(0, 0, 0, 0.8);
+background-color: rgba(0, 0, 0, 0.487);
 }
 
 img.demo {
@@ -265,7 +263,7 @@ cursor: pointer;
             <div class="col" style="float: right;">
               <div class="card text-light bg-dark">
                 <div class="card-body text-center iframe-container">
-                  <img style="padding: 10px;" src="images/img_7.JPG" class="responsive-iframe onclick="openModal();currentSlide(2)" class="hover-shadow" class="card-img-top" alt="2nd image">
+                  <img style="padding: 10px;" src="images/img_7.JPG" class="responsive-iframe" onclick="openModal();currentSlide(2)" class="hover-shadow" class="card-img-top" alt="2nd image">
                 </div>
               </div>
             </div>
@@ -424,8 +422,8 @@ cursor: pointer;
 
 <!-- The Modal/Lightbox. Aquired from W3School.com -->
 <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
+
 
     <div class="mySlides">
       <img src="images/img_6.png" style="width:100%">
@@ -454,6 +452,9 @@ cursor: pointer;
     <div class="mySlides">
       <img src="images/img_5.png" style="width:100%">
     </div>
+
+    <!--Close Button-->
+    <a class="close cursor" onclick="closeModal()">&times;</a>
 
     <!-- Next/previous controls -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
