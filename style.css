@@ -278,7 +278,9 @@ input[type=submit]:hover, input[type=reset]:hover {
     }
 
     textarea {
-        width: 400px;
+        width: 350px;
+        margin-left: 0px;
+        padding-left: 0px;
     }
 
 }
